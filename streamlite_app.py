@@ -23,7 +23,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like information about?','orange')
 streamlit.write('The user entered ', fruit_choice)
 
 import requests
@@ -45,7 +45,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 import requests
-fruit_choice1 = streamlit.text_input('What fruit would you like to add?','jackfruit')
+fruit_choice1 = streamlit.text_input('What fruit would you like to add?','apple')
 streamlit.write('Thanks for adding ',fruit_choice1)
 
 my_cur.execute("insert into fruit_load_list_values ('from streamlit')")
