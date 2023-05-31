@@ -61,5 +61,5 @@ my_cur.execute("insert into fruit_load_list_values ('from streamlit')")
 #allow the end
 def insert_row_snowflake(new_fruit):
  with my_cnx.cusrsor() as my_cur:
-  my_cur.execute("insert into fruit_load_list values ('"jackfruit" + "papaya" + "kiwi" + "guava"')")
+  my_cur.execute("insert into fruit_load_list values ('"+"jackfruit","papaya","kiwi","guava"+"')")
   return "Thanks for adding " + new_fruit
