@@ -35,6 +35,10 @@ import requests
 fruit_choice1 = streamlit.text_input('What fruit would you like to add?','apple')
 streamlit.write('Thanks for adding ',fruit_choice1)
 
+import requests
+fruit_choice1 = streamlit.text_input('View our Fruit List - Add Your Favorites!','jackfruit','papaya','kiwi','guava')
+streamlit.write('Thanks for adding ',fruit_choice1)
+
 #allow the end
 if streamlit.button('Get Fruit List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
