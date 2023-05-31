@@ -35,8 +35,6 @@ import requests
 fruit_choice1 = streamlit.text_input('What fruit would you like to add?','apple')
 streamlit.write('Thanks for adding ',fruit_choice1)
 
-my_cur.execute("insert into fruit_load_list_values ('from streamlit')")
-
 #allow the end
 def insert_row_snowflake(new_fruit):
  with my_cnx.cusrsor() as my_cur:
